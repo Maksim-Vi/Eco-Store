@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "282c4f894ccf87654556db7ea4f51190",
+    "revision": "cd59dec5fbc671ac0cfd03fdab6310ae",
     "url": "/Eco-Store/index.html"
   },
   {
-    "revision": "3bd67795f50c71529cef",
+    "revision": "42353b081e0f0db8bc45",
     "url": "/Eco-Store/static/css/2.11829350.chunk.css"
   },
   {
-    "revision": "55dfac1dfcc94e1db3c4",
+    "revision": "2a7fecd108b719d91c9c",
     "url": "/Eco-Store/static/css/main.4850acab.chunk.css"
   },
   {
-    "revision": "3bd67795f50c71529cef",
-    "url": "/Eco-Store/static/js/2.310355b8.chunk.js"
+    "revision": "42353b081e0f0db8bc45",
+    "url": "/Eco-Store/static/js/2.27e4473d.chunk.js"
   },
   {
     "revision": "4d47ffde3dc69784e8e23fd910817ef8",
-    "url": "/Eco-Store/static/js/2.310355b8.chunk.js.LICENSE.txt"
+    "url": "/Eco-Store/static/js/2.27e4473d.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "55dfac1dfcc94e1db3c4",
-    "url": "/Eco-Store/static/js/main.a2288747.chunk.js"
+    "revision": "2a7fecd108b719d91c9c",
+    "url": "/Eco-Store/static/js/main.2e5be82d.chunk.js"
   },
   {
     "revision": "50326e8794d6785604bc",
