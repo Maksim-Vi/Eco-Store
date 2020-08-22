@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/Eco-Store/static/css/main.4850acab.chunk.css",
-    "main.js": "/Eco-Store/static/js/main.62a866ee.chunk.js",
-    "main.js.map": "/Eco-Store/static/js/main.62a866ee.chunk.js.map",
+    "main.js": "/Eco-Store/static/js/main.5cb74f4c.chunk.js",
+    "main.js.map": "/Eco-Store/static/js/main.5cb74f4c.chunk.js.map",
     "runtime-main.js": "/Eco-Store/static/js/runtime-main.079d0c2f.js",
     "runtime-main.js.map": "/Eco-Store/static/js/runtime-main.079d0c2f.js.map",
     "static/css/2.11829350.chunk.css": "/Eco-Store/static/css/2.11829350.chunk.css",
     "static/js/2.27e4473d.chunk.js": "/Eco-Store/static/js/2.27e4473d.chunk.js",
     "static/js/2.27e4473d.chunk.js.map": "/Eco-Store/static/js/2.27e4473d.chunk.js.map",
     "index.html": "/Eco-Store/index.html",
-    "precache-manifest.21441aaec4f9b9f8f719bba812b22daf.js": "/Eco-Store/precache-manifest.21441aaec4f9b9f8f719bba812b22daf.js",
+    "precache-manifest.e4fef4a5a31d78d65e5079e5be4e6d96.js": "/Eco-Store/precache-manifest.e4fef4a5a31d78d65e5079e5be4e6d96.js",
     "service-worker.js": "/Eco-Store/service-worker.js",
     "static/css/2.11829350.chunk.css.map": "/Eco-Store/static/css/2.11829350.chunk.css.map",
     "static/css/main.4850acab.chunk.css.map": "/Eco-Store/static/css/main.4850acab.chunk.css.map",
@@ -32,6 +32,6 @@
     "static/css/2.11829350.chunk.css",
     "static/js/2.27e4473d.chunk.js",
     "static/css/main.4850acab.chunk.css",
-    "static/js/main.62a866ee.chunk.js"
+    "static/js/main.5cb74f4c.chunk.js"
   ]
 }
