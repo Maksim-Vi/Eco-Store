@@ -28,14 +28,6 @@ if(process.env.NODE_ENV === 'production'){
     app.get('*', (req,res)=>{
         res.sendFile(path.resolve(__dirname,'client','build','index.thml'))
     })
-
-    res.header('access-control-allow-origin', '*');
-    res.header('access-control-allow-headers', 'Origin, X-Requested-With, Content-Type, Accept, Authorization');
-    if (req.method === 'OPTIONS'){
-        res.header('access-control-allow-methods', 'PUT,POST,GET,DELETE,PATCH');
-        return res.status(200).json('Option all good')
-    }
-    next();
 }
 
 ghpages.publish('client', function(err) {console.log(err);});
