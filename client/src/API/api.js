@@ -1,14 +1,14 @@
 import * as axios from 'axios'
 
 
-// const InstenceAPI2 = axios.create({
-//     withCredentials: true,
-//     //baseURL:'https://maksim-vi.github.io/Eco-Store/' // обязательно такая запись иначе не работает baseURL
-//     baseURL:'http://localhost:3000/Eco-Store/',
-//     headers:{
-//        'content-type':'application/json'
-//     }
-// })
+const InstenceAPI2 = axios.create({
+    withCredentials: true,
+    baseURL:'https://maksim-vi.github.io/Eco-Store/', // обязательно такая запись иначе не работает baseURL
+    // baseURL:'http://localhost:3000/Eco-Store/',
+    headers:{
+       'content-type':'application/json'
+    }
+})
 
 // export const getStoreApi = () => {
 //     return InstenceAPI2.get(`Store.json`)
@@ -20,7 +20,7 @@ import * as axios from 'axios'
 //-----------------------------------------------
 
 export const getStoreApi = (token) => {
-        return axios({
+        return InstenceAPI2({
             url: `/products` ,
             method: 'GET',
             headers: {
@@ -37,7 +37,7 @@ export const getStoreApi = (token) => {
 
 
 export const postFormStoreApi = (token,firstName,LastName,Email,subject,phone) => { 
-    return axios({
+    return InstenceAPI2({
         url: `/MainLink/form` ,
         method: 'POST',
         headers: {
@@ -52,7 +52,7 @@ export const postFormStoreApi = (token,firstName,LastName,Email,subject,phone) =
 }
 
 export const postFormStoreBasketApi = (token,firstName,Email,phone,items) => { 
-    return axios({
+    return InstenceAPI2({
         url: `/StoreBasket/form` ,
         method: 'POST',
         headers: {
@@ -67,7 +67,7 @@ export const postFormStoreBasketApi = (token,firstName,Email,phone,items) => {
 }
 
 export const getPopularApi = (token) => { 
-    return axios({
+    return InstenceAPI2({
         url: `/top` ,
         method: 'GET',
         headers: {
