@@ -30,7 +30,7 @@ if(process.env.NODE_ENV === 'production'){
     })
 }
 
-ghpages.publish('client/build', {
+ghpages.publish('client', {
     branch: 'master',
     repo: 'https://maksim-vi.github.io/Eco-Store/'
   }, callback);
