@@ -1,0 +1,34 @@
+body{
+    margin: 0;
+}
+
+.containerAboutUs{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    font-family: "Montserrat", sans-serif;
+    margin-top: 2%;
+    margin-bottom: 5%;
+}
+
+.containerAboutUs strong {
+    font-size: 18px;
+}
+
+.About h2 {
+    font-family: "Montserrat", sans-serif;
+    margin-bottom: 3%;
+    font-size: 34px;
+    font-weight: 900;
+    color: rgb(53, 53, 53);
+}
+
+.introStore{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 250px;
+    background: url('./../img/header-BG/headerBG.png') center no-repeat;
+    background-size: cover; 
+}

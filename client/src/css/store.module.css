@@ -1,0 +1,160 @@
+body{
+    margin: 0;
+}
+/* стиль для Store.html */
+.introStore{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 250px;
+    background: url('./../img/header-BG/headerBG.png') center no-repeat;
+    background-size: cover; 
+}
+.section3{
+    padding: 20px 0;
+}
+.headerS1{
+    width: 100%;
+    max-width: 950px; 
+    margin: 0 auto 50px;  
+    text-align: center;
+}
+.section3Title{
+    text-align: center;
+    text-transform: uppercase;
+}
+
+
+
+
+.containerCard{
+    display: flex;
+    flex-direction: column;
+}
+.containerMenuItem{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+
+}
+
+.products{
+    list-style: none;
+    margin: 0 -20px 0 0;
+    padding: 0;
+    text-align: center;
+    display: inline-table;
+}
+.card{
+    display: inline-block;
+    padding: 20px;
+
+    /* это делает 3д эффект более глубоким, чем больше пикселей тем дальше от глаз как бы картинка при 3д */
+    perspective: 1000px;
+    /* стиль для 3д */
+    transform-style: preserve-3d;
+}
+.cardItem{
+    display: flex;
+    background-color: white;
+    width: 300px;
+    overflow: hidden;
+    transition: transform 0.2s;
+    position: relative;
+}
+.cardItem img{
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    /* height: 300px;  */
+}
+
+
+
+
+.Price{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1%;
+    background-color: #55555575;
+    padding: 10px;
+    width: 300px;
+}
+.PriceTxt{
+    display: flex;
+    margin-top: 4%;
+    flex-direction: column;
+}
+.PriceTxt p{
+    padding: 0;
+    margin: 0;
+}
+.inStockTrue{
+    color: green;
+    font-size: 12px;
+}
+.inStockFalse{
+    color: red;
+    font-size: 12px;
+}
+.PriceBtn{
+    display: block;
+    margin-top: 3px;
+    font-size: 11px;
+    width: 95px;
+    height: 35px;
+    border: 0;
+}
+.PriceBtn:hover{
+    border: 1px solid green;
+}
+
+
+
+
+.containerItem{
+    display: flex;
+    justify-content: center;
+}
+
+.Item_Price_txt{
+    margin-top: 1px;
+}
+.Item_Price_txt p{
+    padding: 0;
+    padding-top: 5px;
+}
+
+/* MEDIA */
+
+@media screen and (max-width: 1024px) and (min-width:524px){
+    .colum2{
+        display: block;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+    .card{
+        padding-top: 5%;
+    }
+}
+
+
+@media screen and (max-width:524px){    
+    .colum4{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .Price {
+        justify-content: space-between;      
+    }
+}
+
+@media screen and (max-width:500px){   
+
+    .MenuSearch {   
+        display: none;
+    }
+}

@@ -1,0 +1,356 @@
+
+
+body{
+    margin: 0;
+}
+.section4{
+    padding: 20px 0;
+}
+.headerS4{
+    width: 100%;
+    max-width: 950px; 
+    margin: 0 auto 50px;  
+}
+
+
+.introStore{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 250px;
+    background: url('./../img/header-BG/headerBG.png') center no-repeat;
+    background-size: cover; 
+}
+.containerItem{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: flex-start;
+    /* margin-left: 10%; */
+}
+
+.MainImgMedia{
+    display: none;
+}
+
+.ItemImg{
+    display: flex;
+    margin-bottom: 5%;
+}
+
+.ItemImgLittle{
+    margin-top: 2%;
+    margin-bottom: 5%;
+}
+
+.ItemImgLittle img{
+    margin-left: 10%;
+    width: 35px;
+    height: 40px;
+}
+
+.ItemDescription{
+    width: 100%;
+    margin-left: 10%;
+}
+
+.title{
+    text-transform: uppercase;
+}
+
+.inStockTrue{
+    color: green;
+    font-size: 12px;
+}
+.inStockFalse{
+    color: red;
+    font-size: 12px;
+}
+
+.ItemPrice{
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    align-items: center;
+    font-size: 22px;
+}
+
+.ItemPriceBtn{
+    display: inline;
+    padding: 10px 50px;
+    color: #fff;
+    background-color: #36363662;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+    /* margin-left: 20%; */
+    position: relative;
+}
+
+.ItemPriceBtn:hover{
+    color: green;
+    opacity: 1;
+    background-color: #36363662;
+    border: 2px solid green;
+}
+
+.strikethrough {
+    padding-top: 10%;
+    position: relative;
+    font-size: 24px;
+}
+
+.strikethrough:before {
+    border-bottom: 3px solid red;
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 50%;
+    transform: rotate(-7deg);
+}
+.salePrice{
+    white-space: nowrap;
+    font-size: 26px;
+}
+
+
+
+
+
+.DescriptionParams{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.characteristics{
+    list-style-type: none; /* Убираем маркеры */
+}
+
+
+.characteristics .items .item {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 12px;
+}
+
+.itemValue p {
+    margin: 0;
+}
+
+.characteristics .itemsTitle {
+    margin: 0 0 24px;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.characteristics .items {
+    margin: 0 0 48px;
+    color: rgba(0,0,0,.87);
+}
+
+.characteristics .items .itemLabel {
+    border-bottom: 1px dotted rgba(0,0,0,.11);
+    width: 40%;
+    min-width: 40%;
+    margin-right: 12px;
+    color: rgba(0,0,0,.54);
+}
+
+.characteristics .items .itemLabel span {
+    background: #fff;
+    padding-bottom: 1px;
+}
+
+.characteristics .items .itemValue {
+    border-bottom: 1px dotted transparent;
+    word-break: break-word;
+}
+
+.characteristics .items .item {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 12px;
+}
+
+.characteristics .items .itemLabel {
+    border-bottom: 1px dotted rgba(0,0,0,.11);
+    width: 40%;
+    min-width: 40%;
+    margin-right: 12px;
+    color: rgba(0,0,0,.54);
+}
+
+.characteristics .items .itemValue {
+    border-bottom: 1px dotted transparent;
+    word-break: break-word;
+}
+
+@media screen and (max-width:990px) and (min-width:755px){   
+    .title{
+        font-size: 25px;
+    }
+
+    .ItemImg {
+        max-width: 50%;
+    }
+
+    .ItemPriceTxt{  
+        flex: none;
+        font-size: 24px;
+        white-space: nowrap;
+    }
+
+    .containerItem {
+        display: flex;
+        justify-content: flex-start;
+        margin-left: 1%;
+    }
+    .ItemDescription {
+        margin-left: 2%;
+    }
+    .DescriptionParams{
+        margin-top: 2%;
+    }
+    .ItemPriceBtn{
+        padding: 10px 40px;
+        font-size: 12px;
+        margin: auto;
+    }
+}
+
+@media screen and (max-width:755px) and (min-width:600px){   
+    .containerItem {
+        display: flex;
+        justify-content: flex-start;
+        margin-left: 1%;
+    }
+    .ItemImg {
+        max-width: 50%;
+    }
+    .ItemPriceTxt{  
+        flex: none;
+        font-size: 24px;
+        white-space: nowrap;
+    }
+    
+    .ItemDescription {
+        margin-left: 2%;
+    }
+    .DescriptionParams{
+        margin-top: 2%;
+    }
+    .title{
+        font-size: 24px;
+    }
+    .ItemPriceBtn{
+        padding: 10px 40px;
+        font-size: 12px;
+        white-space: nowrap;
+        margin: auto;
+    }
+}
+
+@media screen and (max-width:600px) and (min-width:350px){ 
+    .containerItem {
+        display: block;
+        justify-content: flex-start;
+        margin-left: 0;
+    }  
+    .ItemDescription {
+        margin-left: 2%;
+    }
+    .ItemImg{
+        display: none;
+    }
+    .MainImgMedia{
+        display: flex;
+        /* margin-left: 15%;
+        width: 250px;
+        height: 250px; */
+    }
+    .ItemPriceBtn{
+        padding: 10px 50px;
+        border-radius: 2px;
+        font-size: 9px;
+        margin-left: 15%;
+    }
+    .DescriptionParams{
+        margin-top: 2%;
+    }
+    /* .ItemPrice{  
+        margin-left: 12%;
+    } */
+    .ItemPriceTxt{  
+        flex: none;
+        font-size: 16px;
+        white-space: nowrap;
+    }
+    .title{
+        font-size: 22px;
+        text-align: center;
+    }
+    p {
+        text-align: center;
+    }
+
+    .itemsTitle{
+        text-align: center;
+    }
+    .itemValue p{
+        text-align: start;
+    }
+
+}
+
+@media screen and (max-width:350px){ 
+    .containerItem {
+        display: block;
+        justify-content: flex-start;
+        margin-left: 0;
+    }  
+    .ItemImg{
+        display: none;
+    }
+    .MainImgMedia{
+        display: flex;
+    }
+    .ItemPriceBtn{
+        padding: 5px 30px;
+        border-radius: 2px;
+        font-size: 9px;
+        margin-left: 30%;
+    }
+    .DescriptionParams{
+        margin-top: 2%;
+    }
+    .ItemPrice{  
+        margin-left: 10%;
+    }
+    .ItemPriceTxt{  
+        flex: none;
+        font-size: 16px;
+    }
+    .title{
+        font-size: 22px;
+        text-align: center;
+    }
+    p {
+        text-align: center;
+    }
+
+
+    .itemsTitle{
+        text-align: center;
+    }
+    .itemValue p{
+        text-align: start;
+    }
+}
+
+

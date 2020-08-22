@@ -1,0 +1,259 @@
+.container{
+    width: 100%;
+    margin: 0 auto;
+}
+
+
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    background-color: #4CAF50; /* Black background color */
+    top: 0; /* Stay on top */
+    width: 100%; /* Full width */
+    transition: top 0.3s; /* Transition effect when sliding down (and up) */
+}
+.navbar a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    text-decoration: none;
+    max-width: 1200px;
+}
+.navbar a:hover {
+    background-color: #ddd;
+    color: black;
+}
+.logout{
+    margin-left: auto;
+}
+
+
+
+
+
+
+.btnRegistration{
+    margin-left: 20px;
+}
+.HeaderLog{
+    margin: 15% 0 0 0;
+    text-align: center; 
+}
+
+.passwordPanel{
+    margin: 2% 0 2% 0;
+}
+.btnPanel{
+    margin: 0 1% 0 1%;
+    position: relative;
+    background-color: #4CAF50;
+    border: none;
+    font-size: 12px;
+    color: #FFFFFF;
+    padding: 10px;
+    width: 120px;
+    text-align: center;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    text-decoration: none;
+    overflow: hidden;
+    cursor: pointer;
+}
+.btnPanel:after {
+    content: "";
+    background: #90EE90;
+    display: block;
+    position: absolute;
+    padding-top: 300%;
+    padding-left: 350%;
+    margin-left: -20px!important;
+    margin-top: -120%;
+    opacity: 0;
+    transition: all 0.8s
+}
+.btnPanel:active:after{
+    padding: 0;
+    margin: 0;
+    opacity: 1;
+    transition: 0s
+}
+
+
+
+
+
+
+.containerTables{
+    width: 100%;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+.bullet {
+    /* временно */
+    margin-top: 20px; 
+
+    margin-left: 0;
+    list-style: none;
+    counter-reset: li;
+}
+.bullet li {
+    position: relative;
+    margin-bottom: 1.5em;
+    border: 3px solid #CADFCF;
+    padding: 0.6em;
+    border-radius: 4px;
+    background: #FEFEFE;
+    color: #231F20;
+    font-family: "Trebuchet MS", "Lucida Sans";
+}
+.bullet li:before {
+    position: absolute;
+    top: -0.7em;
+    padding-left: 0.4em;
+    padding-right: 0.4em;
+    font-size: 16px;
+    font-weight: bold;
+    color: #DCC24B;
+    background: #FEFEFE;
+    border-radius: 50%;
+    counter-increment: li;
+    content: counter(li);
+}
+
+
+
+.alert {
+    padding: 15px 50px;
+    background-color: #2b2b2b;
+    color: rgb(211, 211, 211);
+}
+.closebtn {
+    margin-left: 10px;
+    color: white;
+    float: right;
+    font-size: 18px;
+    line-height: 20px;
+    transition: 0.3s;
+}
+.closebtn:hover {
+    color: rgb(255, 0, 0);
+}
+
+
+
+
+.containerMainCreater{
+    text-align: center;
+    align-items: center;
+}
+.containerCreater{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: center;
+}
+.containerCreatorDescription{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+}
+
+input[type=text2], textarea[type=text2] {
+    width: 100%;
+    padding: 7px;
+    margin: 2%;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.Product{
+    margin-right: 20px;
+}
+
+
+
+.containerEditProduct{
+    display: flex;
+    margin: 0 auto;
+    flex-direction: column;
+    max-width: 1200px;
+    width: 50%;
+}
+.containerEditProduct h4 {
+    text-align: center;
+}
+.btnEditProduct .btnPanel{
+    left: 45%;
+}
+.SetImage img{
+    margin-right: 5%;
+}
+
+
+
+
+.containetTableItem li{
+    display: flex;
+    justify-content: space-between;
+}
+.containetTableItem li{
+    align-items: center;
+}
+
+.containetTableItem span{
+    padding: 2%;
+    border-left: 1px solid #dadada;
+}
+
+.containetTableItem img{
+    border-left: 1px solid #dadada;
+}
+
+
+
+.FeatureContainerText{
+    display: flex;
+}
+
+
+
+
+.containerTop{
+    display: flex;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 5%;
+}
+.containerTopText{
+    width: 70%;
+    height: 100%;
+}
+
+.containerAddTop{
+    display: flex;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 5%;
+    margin-left: 12%;
+}
+.addButton{
+    display: flex;
+    margin-left: 20%;
+}
+
+
+.topItemChange{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}

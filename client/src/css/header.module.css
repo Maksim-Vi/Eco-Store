@@ -1,0 +1,435 @@
+body{
+    margin: 0;
+}
+.btn{
+    text-decoration: none;
+}
+.btn img {
+    padding-left: 5px;
+    width: 30px;
+    height: 25px;
+}
+.btn:hover img{
+    opacity: 0.7;
+}
+
+
+#myBtn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: rgba(44, 44, 44, 0.726); /* Set a background color */
+    color: white; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 15px; /* Some padding */
+    border-radius: 10px; /* Rounded corners */
+    font-size: 18px; /* Increase font size */
+}
+
+#myBtn:hover {
+    background-color: #555; /* Add a dark-grey background on hover */
+}
+
+
+.container{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+
+.intro{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    background: url('./../img/header-BG/headerBG.png') center no-repeat;
+    background-size: cover; 
+}
+.introAbout{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 250px;
+    background: url('./../img/header-BG/headerBG.png') center no-repeat;
+    background-size: cover; 
+
+}
+
+.mainText{
+    width: 100%;
+    max-width: 650px;
+    margin: 0 auto;
+    text-align: center;
+} 
+.mainText h2 {
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 45px;
+}
+.mainText span {
+    color: green;
+}
+.Store {
+    display: inline-block;
+    margin-top: 5%;
+    padding: 10px 50px;
+    color: #28f44f;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: background 0.1s linear, color 0.1s linear;
+    position: relative;
+}
+
+.Store:hover {
+    border: 2px solid #28f44f;
+    color: #fff;
+    transition: background 0.1s linear, color 0.1s linear;
+}
+
+
+
+
+.header{
+    padding-top: 30px;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    position: absolute;
+    text-align: center;
+}
+
+
+
+.nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-transform: uppercase;
+    font-size: 14px;
+    margin-top: 3%;
+}
+.nav_menu{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    text-transform: uppercase;
+    align-items: center;
+}
+.nav_menu li {
+    padding-left: 20px;
+}
+.nav_menu li a {
+    color: #fff;
+    font-size: 15px;
+    text-decoration: none;
+}
+.nav_menu a:hover{
+    color: #28f44f;
+    border-bottom: 1px solid #28f44f;
+}
+.nav_menu span:hover{
+    color: #28f44f;
+    border-bottom: 1px solid #28f44f;
+}
+.nav_menu li  {
+    color: #fff;
+    font-size: 15px;
+    text-decoration: none;
+}
+
+.navActive {
+    color: #28f44f;
+    border-bottom: 1px solid #28f44f;
+}
+.navActive span{
+    color: #28f44f;
+    border-bottom: 1px solid #28f44f;
+}
+/* .containerLogo{
+    display: flex;
+    flex-direction: column;
+} */
+.headerNumber p{
+    /* margin-top: 5px; */
+    /* margin-left: 2%; */
+    padding-left: 30px;
+    color: #f1f1f1;
+    font-size: 20px;
+} 
+.logo:hover img {
+    opacity: 0.7;
+}
+
+.korzina{
+    position:relative;
+    margin:100px auto;
+    align-items: center;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    /* padding-left: 30px; */
+}
+.korzina span{
+    text-decoration: none;
+    color: #fff;
+}
+.korzina span a{
+    text-decoration: none;
+}
+
+.korzina:hover span{
+    color: #28f44f;
+    border-bottom: 1px solid #28f44f;
+}
+
+.count{
+    margin-top: 10px;
+    margin-left: 2px;
+
+}
+.block{
+    display: none;
+     margin-left: -240px;
+    padding-left: 60px;
+    padding-right: 170px;
+    margin-top: 40px;
+    background: #f3f3f3;
+    height: 70px;
+    border-radius: 5px; 
+}
+
+.korzina:hover .block{
+    display:block;
+    position:absolute;
+    top:0px;
+    z-index:9999;
+    width:100px;
+}
+
+.Contacts{
+    cursor: pointer;
+}
+
+
+/*  */
+.btnOpenAnswerNav{
+    display: none;
+}
+
+.overlay {
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0, 0.9);
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+
+.overlayContent {
+    position: relative;
+    top: 15%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.overlayContent li{
+    list-style-type: none; /* Убираем маркеры */
+}
+
+.overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 30px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+.overlay a:hover, .overlay a:focus {
+    color: #f1f1f1;
+}
+
+.overlay span {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 30px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+.Contacts:hover, .Contacts:focus {
+    color: #f1f1f1;
+}
+
+
+.overlay .closebtn {
+    cursor:pointer;
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+}
+.disableBasket {
+    display: none;
+}
+/*  */
+
+/* MEDIA */
+
+@media screen and (max-width: 1100px) and (min-width:850px){
+    nav{
+        justify-content: center;
+        flex-direction: column;
+    }
+    .ContainerHeader header .mainText{
+        margin-top: 3%;
+    }
+    .ContainerHeader header {
+        min-height: 525px;
+    }
+
+    .nav_menu li {
+        margin-bottom: 10px;
+        font-size: 12px;
+    }
+
+    .nav_menu li a {
+        font-size: 12px;
+    }
+
+    .nav_menu li a span {
+        font-size: 12px;
+    }
+    
+    .mainText h2 {
+        text-transform: uppercase;
+        color: #fff;
+        font-size: 30px;
+    }
+    
+    .headerNumber p{
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width:850px){    
+    .nav {
+        display: flex;
+        justify-content: space-between;
+        padding: 0px 20px; 
+        /* justify-content: center;
+        align-items: flex-start; */
+    }
+
+    .logo{
+        margin-top: 8px;
+    }
+
+	.nav_menu {
+         /* для адапт меню значка  */
+        display: none;
+
+		/* display: flex; */
+		flex-direction: column;
+	}
+	.nav_menu li {
+        margin-bottom: 10px;
+    }
+
+    .nav_menu li a {
+        font-size: 10px;
+    }
+
+    .nav_menu li a span {
+        font-size: 10px;
+    }
+    
+    .mainText h2 {
+        text-transform: uppercase;
+        color: #fff;
+        font-size: 30px;
+    }
+
+    /* добавить итем для адапт нового меню  */
+
+    /* answerNav */
+    .btnOpenAnswerNav{
+        display: flex;
+        margin-top: 5%;
+        font-size:40px;
+        cursor:pointer;
+        color: #f1f1f1;
+    }
+    .btnAnsNav{
+        text-align: center;
+    }
+    .disableBasket {
+        display: flex;
+        justify-content: center;
+    }
+    .korzina{
+        margin-right: 5%; 
+    }
+    .korzina span {
+        margin: 0;
+        padding: 0;
+        padding-left: 20px;
+        font-size: 18px;
+        color: #818181;
+    }
+    .btnAnsNav img {
+        padding-left: 5px;
+        width: 30px;
+        height: 25px;
+    }
+    .headerNumber{
+        font-size: 18px;
+        color: #818181;
+    }
+    .headerNumber span{
+        color: #378337;
+    }
+
+}
+
+
+@media screen and (max-width:350px){    
+    .mainText h2 {
+        text-transform: uppercase;
+        color: #fff;
+        font-size: 26px;
+    }
+    .korzina{
+        display: flex;
+        justify-content: center;
+        margin-right: 10%;
+    }
+}
+
+@media screen and (max-height:450px){    
+    .mainText {
+        padding-top: 20%;
+    }
+    .korzina{
+        display: flex;
+        justify-content: center;
+        margin-right: 10%;
+    }
+}

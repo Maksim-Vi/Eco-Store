@@ -1,0 +1,5 @@
+{
+    "port": 5000,
+    "jwtSecret": "AdminPanel123_NotIs hack",
+    "mongoURI": "mongodb+srv://AdminPanel:SexgOWG37BOZpDqN@cluster0-xahvc.azure.mongodb.net/store?retryWrites=true&w=majority"
+}

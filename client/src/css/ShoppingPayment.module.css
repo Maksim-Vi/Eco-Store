@@ -1,0 +1,42 @@
+.containerShopPay{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    font-family: "Montserrat", sans-serif;
+    margin-top: 2%;
+    margin-bottom: 5%;
+}
+
+.introStore{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 250px;
+    background: url('./../img/header-BG/headerBG.png') center no-repeat;
+    background-size: cover; 
+}
+
+.Shopping img, .Pay img{
+    border: 2px solid #28f44f;
+    width: 4%;
+    margin: 1%;
+}
+.Shopping h3, .Pay h3{
+    font-family: open sans,Arial,Helvetica,sans-serif;
+    color: #323232;
+    font-size: 16px;
+    font-weight: 600;
+    margin: 3px 0;
+}
+
+.Pay{
+    margin-top: 1%;
+}
+
+
+strong {
+    font-size: 1.75rem;
+    text-transform: uppercase;
+    color: rgb(53, 53, 53);
+}
