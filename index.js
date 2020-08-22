@@ -3,6 +3,7 @@ const config = require('config')
 const mongoose = require('mongoose')
 const rout = require('./routes/router')
 const path = require('path')
+var ghpages = require('gh-pages');
 const BodyParser = require('body-parser')
 const app = express();
 
@@ -28,6 +29,11 @@ if(process.env.NODE_ENV === 'production'){
         res.sendFile(path.resolve(__dirname,'client','build','index.thml'))
     })
 }
+
+ghpages.publish('dist', {
+    branch: 'master',
+    repo: 'https://maksim-vi.github.io/Eco-Store/'
+  }, callback);
 
 rout(app)
 
