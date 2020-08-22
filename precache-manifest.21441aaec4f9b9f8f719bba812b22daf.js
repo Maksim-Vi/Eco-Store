@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "53c8422f89f56ed0f49a81f0a7124895",
+    "revision": "b09118c432b2fa0b5f7b064fecfcac35",
     "url": "/Eco-Store/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/Eco-Store/static/css/2.11829350.chunk.css"
   },
   {
-    "revision": "5b30035fffed80393f20",
+    "revision": "ed8da7a38c0e94ac275d",
     "url": "/Eco-Store/static/css/main.4850acab.chunk.css"
   },
   {
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/Eco-Store/static/js/2.27e4473d.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "5b30035fffed80393f20",
-    "url": "/Eco-Store/static/js/main.d6a7452c.chunk.js"
+    "revision": "ed8da7a38c0e94ac275d",
+    "url": "/Eco-Store/static/js/main.62a866ee.chunk.js"
   },
   {
     "revision": "50326e8794d6785604bc",
