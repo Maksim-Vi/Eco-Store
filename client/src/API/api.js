@@ -3,8 +3,8 @@ import * as axios from 'axios'
 
 const InstenceAPI2 = axios.create({
     withCredentials: true,
-    //baseURL:'https://maksim-vi.github.io/', // обязательно такая запись иначе не работает baseURL
-    baseURL:'http://localhost:5000/',
+    baseURL:'https://maksim-vi.github.io/', // обязательно такая запись иначе не работает baseURL
+    //baseURL:'http://localhost:5000/',
     headers:{
        'content-type':'application/json'
     }
