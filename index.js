@@ -12,6 +12,8 @@ app.use(BodyParser.json());
 app.use('/uploads',express.static('uploads'))
 app.use('/uploadsimage',express.static('uploadsimage'))
 
+ghpages.publish('client', function(err) {console.log(err)});
+
 app.use((req, res, next) => {
     res.header('access-control-allow-origin', '*');
     res.header('access-control-allow-headers', 'Origin, X-Requested-With, Content-Type, Accept, Authorization');
@@ -29,8 +31,6 @@ if(process.env.NODE_ENV === 'production'){
         res.sendFile(path.resolve(__dirname,'client','build','index.thml'))
     })
 }
-
-ghpages.publish('client', function(err) {console.log(err);});
 
 rout(app)
 

@@ -4,7 +4,7 @@ import * as axios from 'axios'
 const InstenceAPI2 = axios.create({
     withCredentials: true,
     baseURL:'https://maksim-vi.github.io/Eco-Store/', // обязательно такая запись иначе не работает baseURL
-    //baseURL:'http://localhost:3000/',
+    // baseURL:'http://localhost:3000/',
     headers:{
        'content-type':'application/json'
     }
