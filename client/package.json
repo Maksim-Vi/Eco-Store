@@ -53,6 +53,5 @@
     "http-proxy-middleware": "^1.0.3"
   },
   "proxy": "https://maksim-vi.github.io:5000",
-  "proxy1": "http://localhost:5000"  
 }
 
