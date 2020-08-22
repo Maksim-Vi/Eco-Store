@@ -1,0 +1,37 @@
+{
+  "files": {
+    "main.css": "/Eco-Store/static/css/main.4850acab.chunk.css",
+    "main.js": "/Eco-Store/static/js/main.a2288747.chunk.js",
+    "main.js.map": "/Eco-Store/static/js/main.a2288747.chunk.js.map",
+    "runtime-main.js": "/Eco-Store/static/js/runtime-main.079d0c2f.js",
+    "runtime-main.js.map": "/Eco-Store/static/js/runtime-main.079d0c2f.js.map",
+    "static/css/2.11829350.chunk.css": "/Eco-Store/static/css/2.11829350.chunk.css",
+    "static/js/2.310355b8.chunk.js": "/Eco-Store/static/js/2.310355b8.chunk.js",
+    "static/js/2.310355b8.chunk.js.map": "/Eco-Store/static/js/2.310355b8.chunk.js.map",
+    "index.html": "/Eco-Store/index.html",
+    "precache-manifest.f1b6ddd819e616c013edf59b1a7b9938.js": "/Eco-Store/precache-manifest.f1b6ddd819e616c013edf59b1a7b9938.js",
+    "service-worker.js": "/Eco-Store/service-worker.js",
+    "static/css/2.11829350.chunk.css.map": "/Eco-Store/static/css/2.11829350.chunk.css.map",
+    "static/css/main.4850acab.chunk.css.map": "/Eco-Store/static/css/main.4850acab.chunk.css.map",
+    "static/js/2.310355b8.chunk.js.LICENSE.txt": "/Eco-Store/static/js/2.310355b8.chunk.js.LICENSE.txt",
+    "static/media/form.module.css": "/Eco-Store/static/media/ContactsBG.a51606ff.png",
+    "static/media/delivery_transportation.png": "/Eco-Store/static/media/delivery_transportation.d2d4f4d3.png",
+    "static/media/AboutUs.module.css": "/Eco-Store/static/media/headerBG.23ecb4ce.png",
+    "static/media/korzina.png": "/Eco-Store/static/media/korzina.9e32f2ab.png",
+    "static/media/map.png": "/Eco-Store/static/media/map.9210b245.png",
+    "static/media/naloshka new.png": "/Eco-Store/static/media/naloshka new.5a289245.png",
+    "static/media/pay.png": "/Eco-Store/static/media/pay.9edf3090.png",
+    "static/media/popular.module.css": "/Eco-Store/static/media/popularBG.df20aa75.png",
+    "static/media/preloader.gif": "/Eco-Store/static/media/preloader.65ebb302.gif",
+    "static/media/telegram.png": "/Eco-Store/static/media/telegram.7beb5518.png",
+    "static/media/notFound.css": "/Eco-Store/static/media/text.43214024.png",
+    "static/media/viber.png": "/Eco-Store/static/media/viber.b0513a67.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.079d0c2f.js",
+    "static/css/2.11829350.chunk.css",
+    "static/js/2.310355b8.chunk.js",
+    "static/css/main.4850acab.chunk.css",
+    "static/js/main.a2288747.chunk.js"
+  ]
+}
