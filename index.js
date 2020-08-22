@@ -3,7 +3,6 @@ const config = require('config')
 const mongoose = require('mongoose')
 const rout = require('./routes/router')
 const path = require('path')
-var ghpages = require('gh-pages');
 const BodyParser = require('body-parser')
 const app = express();
 
@@ -11,8 +10,6 @@ app.use(BodyParser.urlencoded({extended:false}))
 app.use(BodyParser.json());
 app.use('/uploads',express.static('uploads'))
 app.use('/uploadsimage',express.static('uploadsimage'))
-
-ghpages.publish('client', function(err) {console.log(err)});
 
 app.use((req, res, next) => {
     res.header('access-control-allow-origin', '*');
