@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "c48297fb0cc025ee19ecaabab3bdbec7",
+    "revision": "b282c6fe6de36a43a84a8bd5a966c4fa",
     "url": "/Eco-Store/index.html"
   },
   {
-    "revision": "42353b081e0f0db8bc45",
+    "revision": "9f771a617e4135e76f89",
     "url": "/Eco-Store/static/css/2.11829350.chunk.css"
   },
   {
-    "revision": "6604047fa3caf2993185",
+    "revision": "590b40c8ce5a584a120b",
     "url": "/Eco-Store/static/css/main.4850acab.chunk.css"
   },
   {
-    "revision": "42353b081e0f0db8bc45",
-    "url": "/Eco-Store/static/js/2.27e4473d.chunk.js"
+    "revision": "9f771a617e4135e76f89",
+    "url": "/Eco-Store/static/js/2.b2cab128.chunk.js"
   },
   {
     "revision": "4d47ffde3dc69784e8e23fd910817ef8",
-    "url": "/Eco-Store/static/js/2.27e4473d.chunk.js.LICENSE.txt"
+    "url": "/Eco-Store/static/js/2.b2cab128.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "6604047fa3caf2993185",
-    "url": "/Eco-Store/static/js/main.683f9726.chunk.js"
+    "revision": "590b40c8ce5a584a120b",
+    "url": "/Eco-Store/static/js/main.52cdf94f.chunk.js"
   },
   {
     "revision": "50326e8794d6785604bc",
@@ -44,8 +44,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/Eco-Store/static/media/korzina.9e32f2ab.png"
   },
   {
-    "revision": "9210b2451a4f19b0b8aef9ed85cc2e74",
-    "url": "/Eco-Store/static/media/map.9210b245.png"
+    "revision": "3e2deaac8d14903d32504398ca1d0df5",
+    "url": "/Eco-Store/static/media/map.3e2deaac.png"
   },
   {
     "revision": "5a2892451f90cc942fb707bd6ce9c780",

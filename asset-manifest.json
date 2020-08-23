@@ -1,24 +1,24 @@
 {
   "files": {
     "main.css": "/Eco-Store/static/css/main.4850acab.chunk.css",
-    "main.js": "/Eco-Store/static/js/main.683f9726.chunk.js",
-    "main.js.map": "/Eco-Store/static/js/main.683f9726.chunk.js.map",
+    "main.js": "/Eco-Store/static/js/main.52cdf94f.chunk.js",
+    "main.js.map": "/Eco-Store/static/js/main.52cdf94f.chunk.js.map",
     "runtime-main.js": "/Eco-Store/static/js/runtime-main.079d0c2f.js",
     "runtime-main.js.map": "/Eco-Store/static/js/runtime-main.079d0c2f.js.map",
     "static/css/2.11829350.chunk.css": "/Eco-Store/static/css/2.11829350.chunk.css",
-    "static/js/2.27e4473d.chunk.js": "/Eco-Store/static/js/2.27e4473d.chunk.js",
-    "static/js/2.27e4473d.chunk.js.map": "/Eco-Store/static/js/2.27e4473d.chunk.js.map",
+    "static/js/2.b2cab128.chunk.js": "/Eco-Store/static/js/2.b2cab128.chunk.js",
+    "static/js/2.b2cab128.chunk.js.map": "/Eco-Store/static/js/2.b2cab128.chunk.js.map",
     "index.html": "/Eco-Store/index.html",
-    "precache-manifest.fcefbfd4e57e139dce1e1ea38b43f0d0.js": "/Eco-Store/precache-manifest.fcefbfd4e57e139dce1e1ea38b43f0d0.js",
+    "precache-manifest.1c45c7f211dc0fb8947dffc9d80b9eaf.js": "/Eco-Store/precache-manifest.1c45c7f211dc0fb8947dffc9d80b9eaf.js",
     "service-worker.js": "/Eco-Store/service-worker.js",
     "static/css/2.11829350.chunk.css.map": "/Eco-Store/static/css/2.11829350.chunk.css.map",
     "static/css/main.4850acab.chunk.css.map": "/Eco-Store/static/css/main.4850acab.chunk.css.map",
-    "static/js/2.27e4473d.chunk.js.LICENSE.txt": "/Eco-Store/static/js/2.27e4473d.chunk.js.LICENSE.txt",
+    "static/js/2.b2cab128.chunk.js.LICENSE.txt": "/Eco-Store/static/js/2.b2cab128.chunk.js.LICENSE.txt",
     "static/media/form.module.css": "/Eco-Store/static/media/ContactsBG.a51606ff.png",
     "static/media/delivery_transportation.png": "/Eco-Store/static/media/delivery_transportation.d2d4f4d3.png",
     "static/media/AboutUs.module.css": "/Eco-Store/static/media/headerBG.23ecb4ce.png",
     "static/media/korzina.png": "/Eco-Store/static/media/korzina.9e32f2ab.png",
-    "static/media/map.png": "/Eco-Store/static/media/map.9210b245.png",
+    "static/media/map.png": "/Eco-Store/static/media/map.3e2deaac.png",
     "static/media/naloshka new.png": "/Eco-Store/static/media/naloshka new.5a289245.png",
     "static/media/pay.png": "/Eco-Store/static/media/pay.9edf3090.png",
     "static/media/popular.module.css": "/Eco-Store/static/media/popularBG.df20aa75.png",
@@ -30,8 +30,8 @@
   "entrypoints": [
     "static/js/runtime-main.079d0c2f.js",
     "static/css/2.11829350.chunk.css",
-    "static/js/2.27e4473d.chunk.js",
+    "static/js/2.b2cab128.chunk.js",
     "static/css/main.4850acab.chunk.css",
-    "static/js/main.683f9726.chunk.js"
+    "static/js/main.52cdf94f.chunk.js"
   ]
 }
