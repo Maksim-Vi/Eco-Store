@@ -157,7 +157,7 @@ input[type=text],input[type=password], select, textarea{
     text-transform: uppercase;
     text-decoration: none;
     width: 60%;
-    margin-top: 8%;
+    margin-top: 10%;
     margin-left: 20%;
     opacity: .7;
 }
@@ -252,6 +252,9 @@ input[type=text],input[type=password], select, textarea{
         opacity: .7;
         margin-left: 20%;
     }
+    .btnSend{
+        margin-top: 4%;
+    }
 }
 
 @media screen and (max-width:350px){    
@@ -261,6 +264,10 @@ input[type=text],input[type=password], select, textarea{
     
     .section2_text{
         font-size: 14px;
+    }
+
+    .btnSend{
+        margin-top: 3%;
     }
 
 }

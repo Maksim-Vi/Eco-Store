@@ -37,7 +37,7 @@ let ContactsForm = ({ handleSubmit}) => {
       <div className={s.message}>
             <Field  name="subject" component={Textarea} validate={required}/>
       </div>
-      <button className={s.btnSend} type="submit">Send</button>
+      <button className={s.btnSend} type="submit">Отправить</button>
     </form>
   );
 };

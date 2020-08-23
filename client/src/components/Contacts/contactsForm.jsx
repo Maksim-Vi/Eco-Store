@@ -76,7 +76,8 @@ const FormWithMenu = (props) => {
   }
 
   return (
-    <Modal show={props.modalShow} onHide={props.handleClose}>
+    <Modal show={props.modalShow} onHide={props.handleClose} size="lg" aria-labelledby="contained-modal-title-vcenter"
+    centered>
     <Modal.Header closeButton>
       <Modal.Title> Связаться с нами</Modal.Title>
     </Modal.Header>

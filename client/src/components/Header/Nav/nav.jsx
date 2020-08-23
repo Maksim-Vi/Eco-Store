@@ -41,7 +41,6 @@ const Nav = (props) =>{
         },
     ];
 
-
     const handleClose = () => setModalShow(false);
     const handleShow = () => setModalShow(true);
 
