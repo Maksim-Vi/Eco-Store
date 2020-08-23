@@ -64,7 +64,6 @@ const FormWithMenu = (props) => {
     removeAllToasts()
     addToast(mes, {appearance: 'error',autoDismiss: true})
   }
-
   let chatchAllUnhandleErrors = (reason,promise) =>{
     error('Что то пошло не так, попробуйте снова!')
   }
@@ -73,22 +72,18 @@ const FormWithMenu = (props) => {
     props.postFormStore(token,values.FirstName,values.LastName,values.Email,values.subject)
     message('Данные были переданы. Ожидайте, с вами свяжется менеджер')
     window.addEventListener("unhandledrejection",  chatchAllUnhandleErrors)
-    props.setModalShow(false)
+    props.handleClose()
   }
 
   return (
-    <Modal {...props} className={s.ModalFormNav}  size="lg" aria-labelledby="contained-modal-title-vcenter" centered>
-      <Modal.Header className={s.ModalFormHeader} closeButton>
-        <Modal.Title id="contained-modal-title-vcenter">
-          Связаться с нами
-        </Modal.Title>
-      </Modal.Header>
-      <Modal.Body className={s.ModalFormNavBody}>
-
-        <ContactsFormNav onSubmit={onSubmit} />
-
-      </Modal.Body>
-    </Modal>
+    <Modal show={props.modalShow} onHide={props.handleClose}>
+    <Modal.Header closeButton>
+      <Modal.Title> Связаться с нами</Modal.Title>
+    </Modal.Header>
+    <Modal.Body className={s.ModalFormNavBody}>
+      <ContactsFormNav onSubmit={onSubmit} />
+    </Modal.Body>
+  </Modal>
   );
 };
 

@@ -2,16 +2,17 @@ import React from 'react';
 import logo from '../../../img/logo.png'
 import korzina from '../../../img/korzina.png'
 import s from '../../../css/header.module.css'
-import { NavLink, Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import {totalPriceCount} from '../../Common/common';
 import FormWithMenu from '../../Contacts/contactsForm';
 import AnswerNav from '../../Contacts/answerNav';
 import Dropdown from '../../Common/Dropdown';
+import { useEffect, useState } from 'react';
 
 const Nav = (props) =>{
-    const [modalShow, setModalShow] = React.useState(false);
+    const [modalShow, setModalShow] = useState(false);
     
-    const [AnswNav, setAnswNav] = React.useState(false);
+    const [AnswNav, setAnswNav] = useState(false);
 
     const itemsTab = [
         {
@@ -38,8 +39,12 @@ const Nav = (props) =>{
             name:'Трубочки',
             type:'трубочки'
         },
-      ];
-    
+    ];
+
+
+    const handleClose = () => setModalShow(false);
+    const handleShow = () => setModalShow(true);
+
     return (<>
     <nav className={s.nav}>
         <div className={s.containerLogo}>
@@ -49,8 +54,8 @@ const Nav = (props) =>{
             <NavLink to='/Eco-Store/'></NavLink>
             <Dropdown items={itemsTab}/>
             {/* <li><NavLink to='/Eco-Store/Product' activeClassName={s.navActive}>Продукция</NavLink></li> */}
-            <li><span className={s.Contacts}  onClick={() => setModalShow(true)} >Связатся с нами</span></li>
-            <FormWithMenu show={modalShow} onHide={() => setModalShow(false)} setModalShow={setModalShow} />
+            <li><span className={s.Contacts}  onClick={handleShow}>Связатся с нами</span></li>
+            <FormWithMenu modalShow={modalShow} handleClose={handleClose} />
             <li><NavLink to='/Eco-Store/AboutUs' activeClassName={s.navActive}>О нас</NavLink></li>
             <li><NavLink to='/Eco-Store/Shopping&Payment' activeClassName={s.navActive}>Доставка и Оплата</NavLink></li>
             <li><NavLink to='/Eco-Store/ContactUs' activeClassName={s.navActive}>Контакты</NavLink></li>
