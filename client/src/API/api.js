@@ -10,30 +10,30 @@ export const InstenceAPI2 = axios.create({
     }
 })
 
-// export const getStoreApi = () => {
-//     return InstenceAPI2.get(`Store.json`)
-//     //return InstenceAPI.get(`StoreLocal.json`)
-//         .then (response => {
-//             return response.data;
-//         })
-// }
+export const getStoreApi = () => {
+    return InstenceAPI2.get(`Store.json`)
+    //return InstenceAPI.get(`StoreLocal.json`)
+        .then (response => {
+            return response.data;
+        })
+}
 //-----------------------------------------------
 
-export const getStoreApi = (token) => {
-        return InstenceAPI2({
-            url: `/products` ,
-            method: 'GET',
-            headers: {
-                'Authorization': token,
-                //'Content-Type': 'application/x-www-form-urlencoded'
-            }
-        })
-        .then (response => {
-            return (
-                response.data
-            )
-        })
-    }
+// export const getStoreApi = (token) => {
+//         return InstenceAPI2({
+//             url: `/products` ,
+//             method: 'GET',
+//             headers: {
+//                 'Authorization': token,
+//                 //'Content-Type': 'application/x-www-form-urlencoded'
+//             }
+//         })
+//         .then (response => {
+//             return (
+//                 response.data
+//             )
+//         })
+//     }
 
 
 export const postFormStoreApi = (token,firstName,LastName,Email,subject,phone) => { 
