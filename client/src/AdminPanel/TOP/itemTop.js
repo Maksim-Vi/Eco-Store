@@ -2,6 +2,7 @@ import React from 'react';
 import s from '../AdminPanel.module.css';
 import { AuchContext } from '../../content/content.hook';
 import axios from 'axios';
+import { InstenceAPI2 } from '../../API/api';
 
 const ItemTop = (props) => {
 
@@ -30,7 +31,7 @@ const ItemTop = (props) => {
         formdata.append("image", img.image);
         formdata.append("nameImg", img.image.name);
 
-        axios({
+        InstenceAPI2({
             url: `/top/`  + props.state.id,
             method: 'put',
             headers: {

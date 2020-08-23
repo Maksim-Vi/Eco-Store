@@ -17,7 +17,9 @@ const Popular = (props) =>{
 			    <div className={s.headerS1}>
                     <h2 className={s.sectionTitle}>Популярные товары</h2>
                     <div className={s.sectionText}>
-                        <p className={s.sectionText}>В настоящее время эко-продукт стал более популярным и востребованным. Это помогает защитить нашу землю от вредного производства.</p>
+                        {/* <p className={s.sectionText}>
+                            В настоящее время эко-продукт стал более популярным и востребованным. 
+                        </p> */}
                     </div>
                     { 
                     <ScrollAnimation animateIn='fadeIn' animateOut='fadeOut'>

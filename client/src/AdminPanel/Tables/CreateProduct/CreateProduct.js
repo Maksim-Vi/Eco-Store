@@ -7,6 +7,7 @@ import { AuchContext } from '../../../content/content.hook';
 import axios from 'axios';
 import DTdescColor from './DTdescColor';
 import DTdescEqipment from './DTdescEqipment';
+import { InstenceAPI2 } from '../../../API/api';
 
 const CreateProduct = () => {
 
@@ -91,7 +92,7 @@ const CreateProduct = () => {
         formdata.append("image3", product.image3);
         formdata.append("nameImg", product.image.name);
 
-        axios({
+        InstenceAPI2({
             url: `/products`,
             method: 'POST',
             headers: {

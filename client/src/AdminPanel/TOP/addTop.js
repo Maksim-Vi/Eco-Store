@@ -2,6 +2,7 @@ import React from 'react';
 import s from '../AdminPanel.module.css';
 import axios from 'axios';
 import { AuchContext } from '../../content/content.hook';
+import { InstenceAPI2 } from '../../API/api';
 
 const AddTopItems = () => {
 
@@ -33,7 +34,7 @@ const AddTopItems = () => {
         formdata.append("image", state.image);
         formdata.append("nameImg", state.image.name);
 
-        axios({
+        InstenceAPI2({
             url: `/top`,
             method: 'post',
             headers: {

@@ -5,6 +5,7 @@ import { AuchContext } from '../../content/content.hook';
 import axios from 'axios';
 import AddTopItems from './addTop';
 import ItemTop from './itemTop';
+import { InstenceAPI2 } from '../../API/api';
 
 const Top = () =>{
 
@@ -12,7 +13,7 @@ const Top = () =>{
     const [state, setState] = React.useState([])
 
     let getAllTop = () =>{
-        axios({
+        InstenceAPI2({
             url: `/top`,
             method: 'GET',
             headers: {

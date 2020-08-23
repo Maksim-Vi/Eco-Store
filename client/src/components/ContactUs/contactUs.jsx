@@ -28,7 +28,7 @@ const ContactUs = () =>{
                     </div>
                     <div className={s.HomeAdres}>
                         <strong>Адрес для самовывоза</strong>
-                        <p>ул. Юрия Шумского, 6</p>
+                        <p>ул. Юрия Шумского , г. Киев</p>
                     </div>
                     <img className={s.mapContactUs} src={map} alt=""/>
                 </div>

@@ -7,6 +7,7 @@ import Axios from 'axios';
 import notFound from '../../../../img/undef/notFound.png'
 import ProductChangeColor from './productChangeColor';
 import ProductChangeEquipment from './productChangeEquipment';
+import { InstenceAPI2 } from '../../../../API/api';
 
 const Product = () => {
     const location = useLocation();
@@ -63,7 +64,7 @@ const Product = () => {
         formdata.append("image3", img.image3);
         formdata.append("product", JSON.stringify(item));
                
-        Axios({
+        InstenceAPI2({
             url: `/products/` + item.id,
             method: 'PUT',
             headers: {
@@ -81,7 +82,7 @@ const Product = () => {
     };
 
     const productsHendler = async () => {
-        Axios({
+        InstenceAPI2({
             url: `/products/` + item.id,
             method: 'GET',
             headers: {
