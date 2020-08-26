@@ -39,6 +39,12 @@ const Nav = (props) =>{
             name:'Трубочки',
             type:'трубочки'
         },
+        {
+            id: 5,
+            value: 'Product',
+            name:'Мешочки',
+            type:'мешочки'
+        }
     ];
 
     const handleClose = () => setModalShow(false);
@@ -68,7 +74,7 @@ const Nav = (props) =>{
                 </NavLink>
             </li>
             <li className={s.headerNumber}>
-                <p>+380(96) 543-87-99</p>
+                <p>+380(67) 455-08-01</p>
             </li>
         </menu>
         <span className={s.btnOpenAnswerNav} onClick={() => setAnswNav(true)}>☰</span>

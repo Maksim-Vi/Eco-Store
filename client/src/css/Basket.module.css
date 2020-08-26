@@ -409,6 +409,10 @@ a.bBasket:link,  a.bBasket:visited {
    -o-transition: all 0.25s linear;
    transition: all 0.25s linear;
    }
+
+   .InputText{
+    width: 70%;
+    }
 }
 
 @media only screen and (max-width: 15.375em) {
@@ -454,6 +458,10 @@ a.bBasket:link,  a.bBasket:visited {
 
    .cart .items .cartSection.qtyWrap, .cart .items .cartSection.prodTotal {
        text-align: left;
+   }
+
+   .InputText{
+       width: 30%;
    }
   
 }
@@ -555,5 +563,9 @@ a.bBasket:link,  a.bBasket:visited {
 @media only screen and (max-width: 500px) {
     .FBItemsName{
         font-size: 0.7em;
+    }
+    .FBItemsCardBody{   
+        flex-direction: column;
+        text-align: center;
     }
 }

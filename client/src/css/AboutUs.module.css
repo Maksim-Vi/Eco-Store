@@ -6,7 +6,7 @@ body{
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
-    font-family: "Montserrat", sans-serif;
+    font-family: 'Open Sans', sans-serif;
     margin-top: 2%;
     margin-bottom: 5%;
 }
@@ -16,7 +16,7 @@ body{
 }
 
 .About h2 {
-    font-family: "Montserrat", sans-serif;
+    font-family: 'Open Sans', sans-serif;
     margin-bottom: 3%;
     font-size: 34px;
     font-weight: 900;

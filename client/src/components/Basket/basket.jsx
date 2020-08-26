@@ -37,10 +37,10 @@ const Basket = (props) => {
     <div className={s.introStore}></div>
       <div className={`${s.wrap} ${s.cf}`}>
         <h1 className={s.projTitle}>
-          Responsive Table<span>-Less</span> Shopping Cart
+          Спасибо за выбор <span>Eco-Choice</span> мы всегда вам рады
         </h1>
         <div className={`${s.heading} ${s.cf}`}>
-          <h1>My Cart</h1>
+          <h1>Корзина</h1>
           <NavLink to='/Eco-Store/Product' className={s.continue}>
             обратно в мазагин 
           </NavLink>

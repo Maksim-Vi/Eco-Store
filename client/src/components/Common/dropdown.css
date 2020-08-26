@@ -31,6 +31,7 @@
     position: absolute;
     margin-top: 20px;
     margin-bottom: 5%;
+    z-index: 1;
 }
 
 .dd-wrapper .dd-list li {

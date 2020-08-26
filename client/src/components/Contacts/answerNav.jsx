@@ -10,7 +10,7 @@ const AnswerNav = ({setAnswNav,modalShow,setModalShow,props}) => {
             <p className={s.closebtn} onClick={() => setAnswNav(false)}>×</p>
             <div className={s.overlayContent}>
                 <li className={s.headerNumber}>
-                    <span>+380(96) 543-87-99</span>
+                    <span>+380(67) 455-08-01</span>
                 </li>
                 <li><NavLink to='/Eco-Store/Product'>Продукция</NavLink></li>
                 <li><span className={s.Contacts}  onClick={() => setModalShow(true)} >Связатся с нами</span></li>

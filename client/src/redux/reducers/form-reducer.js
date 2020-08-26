@@ -1,4 +1,5 @@
 import {postFormStoreApi, postFormStoreBasketApi} from '../../API/api'
+import { reset } from 'redux-form'
 
 const SET_ANSWER_FORM = "SET_ANSWER_FORM"
 const ADD_ITEM_PRODUCT = 'ADD_ITEM_PRODUCT'

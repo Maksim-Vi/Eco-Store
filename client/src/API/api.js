@@ -3,37 +3,37 @@ import * as axios from 'axios'
 
 export const InstenceAPI2 = axios.create({
     withCredentials: true,
-    baseURL:'https://maksim-vi.github.io/Eco-Store/', // обязательно такая запись иначе не работает baseURL
-    // baseURL:'http://localhost:3000/',
+    // baseURL:'https://maksim-vi.github.io/Eco-Store/', // обязательно такая запись иначе не работает baseURL
+    baseURL:'http://localhost:3000/',
     headers:{
        'content-type':'application/json'
     }
 })
 
-export const getStoreApi = () => {
-    return InstenceAPI2.get(`Store.json`)
-    //return InstenceAPI.get(`StoreLocal.json`)
-        .then (response => {
-            return response.data;
-        })
-}
+// export const getStoreApi = () => {
+//     return InstenceAPI2.get(`Store.json`)
+//     //return InstenceAPI.get(`StoreLocal.json`)
+//         .then (response => {
+//             return response.data;
+//         })
+// }
 //-----------------------------------------------
 
-// export const getStoreApi = (token) => {
-//         return InstenceAPI2({
-//             url: `/products` ,
-//             method: 'GET',
-//             headers: {
-//                 'Authorization': token,
-//                 //'Content-Type': 'application/x-www-form-urlencoded'
-//             }
-//         })
-//         .then (response => {
-//             return (
-//                 response.data
-//             )
-//         })
-//     }
+export const getStoreApi = (token) => {
+        return InstenceAPI2({
+            url: `/products` ,
+            method: 'GET',
+            headers: {
+                'Authorization': token,
+                //'Content-Type': 'application/x-www-form-urlencoded'
+            }
+        })
+        .then (response => {
+            return (
+                response.data
+            )
+        })
+    }
 
 
 export const postFormStoreApi = (token,firstName,LastName,Email,subject,phone) => { 

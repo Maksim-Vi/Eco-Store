@@ -13,6 +13,7 @@ body{
 }
 .section3{
     padding: 20px 0;
+    font-family: 'Open Sans', sans-serif;
 }
 .headerS1{
     width: 100%;
@@ -76,7 +77,8 @@ body{
 
 .Price{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+    align-items: center;
     margin-top: 1%;
     background-color: #55555575;
     padding: 10px;
@@ -84,7 +86,7 @@ body{
 }
 .PriceTxt{
     display: flex;
-    margin-top: 4%;
+    /* margin-top: 4%; */
     flex-direction: column;
 }
 .PriceTxt p{

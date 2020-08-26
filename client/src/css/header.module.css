@@ -68,6 +68,7 @@ body{
     max-width: 650px;
     margin: 0 auto;
     text-align: center;
+    /* font-family: 'Open Sans', Bold, sans-serif; */
 } 
 .mainText h2 {
     text-transform: uppercase;

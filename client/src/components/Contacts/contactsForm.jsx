@@ -1,7 +1,7 @@
 import React from "react";
 import { Modal } from "react-bootstrap";
 import s from "../../css/form.module.css";
-import { reduxForm, Field } from "redux-form";
+import { reduxForm, Field, reset } from "redux-form";
 import { InputFirstName, InputLastName, InputEmail, Textarea } from "../../validation/validationForm";
 import { compose } from "redux";
 import { connect } from "react-redux";
@@ -25,7 +25,7 @@ const email = (value) =>
   value && !/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i.test(value) ?
   'Invalid email address' : undefined
 
-let ContactsFormNav = ({handleSubmit,valid,...props}) => {
+let ContactsFormNav = ({reset, handleSubmit,valid,...props}) => {
     return (
       <form className={s.form} onSubmit={handleSubmit}>
         <div className={s.NameFormNav}>
@@ -38,7 +38,7 @@ let ContactsFormNav = ({handleSubmit,valid,...props}) => {
         <div className={s.messageFormNav}>
               <Field  name="subject" component={Textarea} validate={required}/>
         </div>
-        <button className={s.btnSend} type="submit">Send</button>
+        <button className={s.btnSend} type="submit" >Send</button>
       </form>
     );
 };
@@ -48,8 +48,6 @@ ContactsFormNav = reduxForm({
 })(ContactsFormNav);
   
   
-
-
 const FormWithMenu = (props) => {
   let auch = useContext(AuchContext)
   let token = auch.token

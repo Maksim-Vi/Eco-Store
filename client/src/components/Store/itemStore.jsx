@@ -18,7 +18,11 @@ const ItemStore = (props) =>{
                 <div className={s.Price}>
                   <div className={s.PriceTxt}>
                     <p>{props.item.name}</p>
-                    <p>{props.item.price - props.item.salePrice} грн.</p>
+                    {props.item.sale 
+                      ? <p>{props.item.price - props.item.salePrice} грн.</p>
+                      : <p>{props.item.price } грн.</p>
+                    }
+                    
                   </div>
                   <div>
                     <button className={s.PriceBtn} 

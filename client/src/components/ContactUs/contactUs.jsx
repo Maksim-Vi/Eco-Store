@@ -15,20 +15,23 @@ const ContactUs = () =>{
                     <div className={s.phoneMenager}>
                         <strong>Менеджер</strong>
                         <ul>
-                            <li>+380(96) 543-87-99</li>
-                            <li>+380(93) 543-87-99</li>
+                            <li>+380(67) 455-08-01</li>
+                            {/* <li>+380(93) 543-87-99</li> */}
                         </ul>
                     </div>
                     <div className={s.emailContactUs}>
                         <strong>Email</strong>
                         <ul>
-                            <li>eco-choice@gmail.com</li>
-                            <li>info.eco-choice@gmail.com</li>
+                            {/* <li>ecoChoice@gmail.com</li> */}
+                            <li>info.ecoChoice@gmail.com</li>
                         </ul>
                     </div>
                     <div className={s.HomeAdres}>
                         <strong>Адрес для самовывоза</strong>
-                        <p>ул. Юрия Шумского , г. Киев</p>
+                        <ul>
+                            {/* <li>ecoChoice@gmail.com</li> */}
+                            <li>ул. Юрия Шумского , г. Киев</li>
+                        </ul>
                     </div>
                     <img className={s.mapContactUs} src={map} alt=""/>
                 </div>

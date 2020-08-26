@@ -6,8 +6,8 @@ const transporter = nodemailer.createTransport({
     port: 587,
     secure: false, // true for 465, false for other ports
     auth: {
-        user: 'maksdev01panel@gmail.com',
-        pass: 'Vfrcbv1996!'
+        user: 'info.ecochoice@gmail.com',
+        pass: 'infoecochoice2020'
     }
 });
 
@@ -26,7 +26,7 @@ const form = (req,res) => {
         //console.log('body', req.body);
         let message = {
             from: req.body.Email,
-            to: `Mailer Test <maksdev01panel@gmail.com>` ,
+            to: `Mailer Test <info.ecochoice@gmail.com>` ,
             subject: 'From Eco Store',
             text: `Вам пришел заказ от:
                 Имя: ${req.body.firstName},
@@ -60,7 +60,7 @@ const formStore = (req,res) => {
         //console.log('body', req.body);
         let message = {
             from: req.body.Email,
-            to: `Mailer Test <maksdev01panel@gmail.com>` ,
+            to: `Mailer Test <info.ecochoice@gmail.com>` ,
             subject: 'From Eco Store',
 
             html:`

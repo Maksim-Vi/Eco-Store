@@ -142,8 +142,8 @@ const Product = () => {
             <div>Тип: <input type="text2" name="typeName" placeholder={item.descriptionTable.typeName} onChange={chengeDescriptionTableHendler} value={item.descriptionTable.typeName} /></div>
             <div>Особенности: <input type="text2" name="features" placeholder={item.descriptionTable.features} onChange={chengeDescriptionTableHendler} value={item.descriptionTable.features} /></div>
 
-            <div>Количество персон: <input type="text2" name="countPeople" placeholder={item.descriptionTable.features} onChange={chengeDescriptionTableHendler} value={item.descriptionTable.features} /></div>
-            <div>Экологичность: <input type="text2" name="Eco" placeholder={item.descriptionTable.features} onChange={chengeDescriptionTableHendler} value={item.descriptionTable.features} /></div>
+            <div>Количество персон: <input type="text2" name="countPeople" placeholder={item.descriptionTable.countPeople} onChange={chengeDescriptionTableHendler} value={item.descriptionTable.countPeople} /></div>
+            <div>Экологичность: <input type="text2" name="Eco" placeholder={item.descriptionTable.Eco} onChange={chengeDescriptionTableHendler} value={item.descriptionTable.Eco} /></div>
             <br />
             <div>
                 {item.descriptionTable.color.length > 0 
