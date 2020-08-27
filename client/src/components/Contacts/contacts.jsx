@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
 import {AuchContext} from '../../content/content.hook';
 import s from "../../css/form.module.css";
-import { reduxForm, Field } from "redux-form";
+import { reduxForm, Field, reset } from "redux-form";
 import { InputFirstName, InputLastName, InputEmail, Textarea } from "../../validation/validationForm";
 import { compose } from "redux";
 import { connect } from "react-redux";
@@ -14,6 +14,9 @@ let required = (v) => {
   }
   return undefined;
 };
+
+const afterSubmit = (result, dispatch) =>
+  dispatch(reset('FormContacts'));
 
 const maxLength = (max) => (value) =>
 value && value.length > max ? `Must be ${max} characters or less` : undefined
@@ -37,13 +40,14 @@ let ContactsForm = ({ handleSubmit}) => {
       <div className={s.message}>
             <Field  name="subject" component={Textarea} validate={required}/>
       </div>
-      <button className={s.btnSend} type="submit">Отправить</button>
+      <button className={s.btnSend} type="submit" >Отправить</button>
     </form>
   );
 };
 
 ContactsForm = reduxForm({
-  form: "FormContacts"
+  form: "FormContacts",
+  onSubmitSuccess:afterSubmit
 })(ContactsForm);
 
 

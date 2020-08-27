@@ -1,7 +1,7 @@
 import React from "react";
 import { Modal } from "react-bootstrap";
 import s from "../../css/form.module.css";
-import { reduxForm, Field, reset } from "redux-form";
+import { reduxForm, Field } from "redux-form";
 import { InputFirstName, InputLastName, InputEmail, Textarea } from "../../validation/validationForm";
 import { compose } from "redux";
 import { connect } from "react-redux";
@@ -17,6 +17,7 @@ let required = (v) => {
   }
   return undefined;
 }
+
 
 const maxLength = (max) => (value) =>
 value && value.length > max ? `Must be ${max} characters or less` : undefined
@@ -44,7 +45,7 @@ let ContactsFormNav = ({reset, handleSubmit,valid,...props}) => {
 };
   
 ContactsFormNav = reduxForm({
-    form: "ContactsFormNav"
+    form: "ContactsFormNav",
 })(ContactsFormNav);
   
   
