@@ -13,9 +13,9 @@ const ProductChangeEquipment = ({ product, item, setItem }) => {
 
     let handleSubmit = (event) => {
         event.preventDefault()
-        let color = item.descriptionTable.color.find(i=> i.id === product.id)        
-        if (color){
-            //console.log('in if', color, text);
+        let equipment = item.descriptionTable.equipment.find(i=> i.id === product.id)        
+        if (equipment){
+            // console.log('in if', equipment, text);
             setItem({ 
                 ...item, 
                 descriptionTable: { 

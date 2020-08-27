@@ -8,6 +8,7 @@ import notFound from '../../../../img/undef/notFound.png'
 import ProductChangeColor from './productChangeColor';
 import ProductChangeEquipment from './productChangeEquipment';
 import { InstenceAPI2 } from '../../../../API/api';
+import { useToasts } from 'react-toast-notifications';
 
 const Product = () => {
     const location = useLocation();
@@ -23,6 +24,17 @@ const Product = () => {
         image3: ''
     })
 
+    const { addToast,removeAllToasts } = useToasts()
+
+    let message = (mes) =>{
+      removeAllToasts()
+      addToast(mes, {appearance: 'success',autoDismiss: true})
+      
+    }
+    let error = (mes) =>{
+      removeAllToasts() 
+      addToast(mes, {appearance: 'error',autoDismiss: true})
+    }
 
     const changeImage = (event) => {
         let file = event.target.files[0]
@@ -77,6 +89,11 @@ const Product = () => {
                 //console.log(res)
                 if (res) {
                     productsHendler()
+                    // console.log(res.data);
+                    message('данные успешно обновлены')
+                } else{
+                    error('что то пошло не так')
+                    // console.log(res);
                 }
             })
     };
@@ -87,6 +104,7 @@ const Product = () => {
             method: 'GET',
             headers: {
                 'Authorization': auch.token,
+                'Content-Type':'text/html'
             }
         })
             .then(res => {

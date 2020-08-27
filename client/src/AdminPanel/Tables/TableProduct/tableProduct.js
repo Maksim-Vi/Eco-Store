@@ -5,10 +5,23 @@ import { AuchContext } from '../../../content/content.hook';
 import axios from 'axios';
 import notFound from '../../../img/undef/notFound.png'
 import s from '../../AdminPanel.module.css';
+import { useToasts } from 'react-toast-notifications';
 
 const TableProduct = ({product,productsHendler}) =>{
     const auch = useContext(AuchContext)
     const {loading} = useHttp()
+
+    const { addToast,removeAllToasts } = useToasts()
+
+    let message = (mes) =>{
+      removeAllToasts()
+      addToast(mes, {appearance: 'success',autoDismiss: true})
+      
+    }
+    let err = (mes) =>{
+      removeAllToasts() 
+      addToast(mes, {appearance: 'error',autoDismiss: true})
+    }
 
     const deleteProductHendler = async () => {        
         axios({
@@ -22,6 +35,11 @@ const TableProduct = ({product,productsHendler}) =>{
         .then(res=>{
             if(res){
                 productsHendler()
+                if (res) {
+                    message('Товар успешно удален')
+                } else{
+                    err('что то пошло не так')
+                }
             }
         })               
       };

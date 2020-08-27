@@ -8,11 +8,24 @@ import axios from 'axios';
 import DTdescColor from './DTdescColor';
 import DTdescEqipment from './DTdescEqipment';
 import { InstenceAPI2 } from '../../../API/api';
+import { useToasts } from 'react-toast-notifications';
 
 const CreateProduct = () => {
 
     const auch = useContext(AuchContext)
     const { loading, error, clearError } = useHttp()
+
+    const { addToast,removeAllToasts } = useToasts()
+
+    let message = (mes) =>{
+      removeAllToasts()
+      addToast(mes, {appearance: 'success',autoDismiss: true})
+      
+    }
+    let err = (mes) =>{
+      removeAllToasts() 
+      addToast(mes, {appearance: 'error',autoDismiss: true})
+    }
 
     const [product, setProduct] = useState({
         id: '',
@@ -102,7 +115,11 @@ const CreateProduct = () => {
             data: formdata
         })
             .then(res => {
-                //console.log(res);
+                if (res) {
+                    message('Товар успешно создан!')
+                } else{
+                    err('что то пошло не так')
+                }
             })
     };
 
