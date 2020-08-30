@@ -41,7 +41,7 @@ const Basket = (props) => {
         </h1>
         <div className={`${s.heading} ${s.cf}`}>
           <h1>Корзина</h1>
-          <NavLink to='/Eco-Store/Product' className={s.continue}>
+          <NavLink to='/Product' className={s.continue}>
             обратно в мазагин 
           </NavLink>
         </div>
@@ -66,7 +66,7 @@ const Basket = (props) => {
               <span className={s.value}>{totalPriceCount(props.itemsAll)} грн</span>
             </li>
             <li className={s.totalRow}>
-              <Link to='/Eco-Store/Basket' onClick={()=>{setModalShow(true)}} className={`${s.bBasket}`}>
+              <Link to='/Basket' onClick={()=>{setModalShow(true)}} className={`${s.bBasket}`}>
                 Заказать
               </Link>
             </li>

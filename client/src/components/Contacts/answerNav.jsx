@@ -12,14 +12,14 @@ const AnswerNav = ({setAnswNav,modalShow,setModalShow,props}) => {
                 <li className={s.headerNumber}>
                     <span>+380(67) 455-08-01</span>
                 </li>
-                <li><NavLink to='/Eco-Store/Product'>Продукция</NavLink></li>
+                <li><NavLink to='/Product'>Продукция</NavLink></li>
                 <li><span className={s.Contacts}  onClick={() => setModalShow(true)} >Связатся с нами</span></li>
                 <FormWithMenu show={modalShow} onHide={() => setModalShow(false)} />
-                <li><NavLink to='/Eco-Store/AboutUs' activeClassName={s.navActive}>О нас</NavLink></li>
-                <li><NavLink to='/Eco-Store/Shopping&Payment' activeClassName={s.navActive}>Доставка и Оплата</NavLink></li>
-                <li><NavLink to='/Eco-Store/ContactUs' activeClassName={s.navActive}>Контакты</NavLink></li>
+                <li><NavLink to='/AboutUs' activeClassName={s.navActive}>О нас</NavLink></li>
+                <li><NavLink to='/Shopping&Payment' activeClassName={s.navActive}>Доставка и Оплата</NavLink></li>
+                <li><NavLink to='/ContactUs' activeClassName={s.navActive}>Контакты</NavLink></li>
                 <li>
-                    <Link to={'/Eco-Store/Basket'} className={s.btnAnsNav}>
+                    <Link to={'/Basket'} className={s.btnAnsNav}>
                     <li> Корзина </li>
                     <div className={s.disableBasket}>
                         <div className={s.korzina}>

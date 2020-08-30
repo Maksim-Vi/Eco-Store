@@ -7,22 +7,18 @@ const ItemStore = (props) =>{
   return(<>
             <li className={s.card}>
                   <Link to={
-                    {pathname:'/Eco-Store/Description/' + props.item.id,
+                    {pathname:'/Description/' + props.item.id,
                     state:{
                       data: {...props.item}
                     }}}>
                     <div className={s.cardContainer}>
-                      <div className={s.cardItem}><img src={`http://localhost:5000/${props.item.image}`} alt="" /></div>
+                      <div className={s.cardItem}><img src={`http://localhost/${props.item.image}`} alt="" /></div>
                     </div>
                   </Link>
                 <div className={s.Price}>
                   <div className={s.PriceTxt}>
                     <p>{props.item.name}</p>
-                    {props.item.sale 
-                      ? <p>{props.item.price - props.item.salePrice} грн.</p>
-                      : <p>{props.item.price } грн.</p>
-                    }
-                    
+                    <p>{props.item.price - props.item.salePrice} грн.</p>
                   </div>
                   <div>
                     <button className={s.PriceBtn} 

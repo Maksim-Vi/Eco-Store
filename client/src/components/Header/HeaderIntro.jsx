@@ -11,7 +11,7 @@ const HeaderIntro = () =>{
             <div className={s.container}>
                 <div className={s.mainText}>
                     <h2><span>Eco</span> Товары в каждый дом</h2>
-                    <Bounce><NavLink to='/Eco-Store/Product' className={s.Store} >В магазин</NavLink></Bounce>
+                    <Bounce><NavLink to='/Product' className={s.Store} >В магазин</NavLink></Bounce>
                 </div>
             </div>
         </div>

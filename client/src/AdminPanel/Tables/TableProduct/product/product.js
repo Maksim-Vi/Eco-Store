@@ -3,7 +3,7 @@ import NavBarPanel from '../../../nav/navBarPanel';
 import { useLocation } from 'react-router-dom';
 import s from '../../../AdminPanel.module.css';
 import { AuchContext } from '../../../../content/content.hook';
-import Axios from 'axios';
+import axios from 'axios';
 import notFound from '../../../../img/undef/notFound.png'
 import ProductChangeColor from './productChangeColor';
 import ProductChangeEquipment from './productChangeEquipment';
@@ -81,7 +81,9 @@ const Product = () => {
             method: 'PUT',
             headers: {
                 'Authorization': auch.token,
-                'Content-Type': 'application/x-www-form-urlencoded'
+                'Content-Type': 'application/x-www-form-urlencoded',
+                'Content-type': 'text/html',
+                'Content-Type': 'multipart/form-data'
             },
             data: formdata
         })
@@ -130,25 +132,25 @@ const Product = () => {
                 <h4>Main Image</h4>
                 {!item.image
                     ? <img src={notFound} alt="" width='55px' height='55px' />
-                    : <img src={`http://localhost:5000/${item.image}`} alt="" width='55px' height='55px' />
+                    : <img src={`http://localhost/${item.image}`} alt="" width='55px' height='55px' />
                 }
                 <input type="file" name="image" placeholder="image" onChange={changeImage} />
                 <h6>Dop image 1</h6>
                 {!item.image
                     ? <img src={notFound} alt="" width='55px' height='55px' />
-                    : <img src={`http://localhost:5000/${item.image1}`} alt="" width='55px' height='55px' />
+                    : <img src={`http://localhost/${item.image1}`} alt="" width='55px' height='55px' />
                 }
                 <input type="file" name="image1" placeholder="image1" onChange={changeImage} />
                 <h6>Dop image 2</h6>
                 {!item.image
                     ? <img src={notFound} alt="" width='55px' height='55px' />
-                    : <img src={`http://localhost:5000/${item.image2}`} alt="" width='55px' height='55px' />
+                    : <img src={`http://localhost/${item.image2}`} alt="" width='55px' height='55px' />
                 }
                 <input type="file" name="image2" placeholder="image2" onChange={changeImage} />
                 <h6>Dop image 3</h6>
                 {!item.image
                     ? <img src={notFound} alt="" width='55px' height='55px' />
-                    : <img src={`http://localhost:5000/${item.image3}`} alt="" width='55px' height='55px' />
+                    : <img src={`http://localhost/${item.image3}`} alt="" width='55px' height='55px' />
                 }
                 <input type="file" name="image3" placeholder="image3" onChange={changeImage} />
             </div>

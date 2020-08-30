@@ -54,7 +54,7 @@ const ItemTop = (props) => {
                 <textarea type="text2" name="text1" placeholder='text1' value={state.text1} onChange={chengeHendler} />
                 <textarea type="text2" name="text2" placeholder='text2' value={state.text2} onChange={chengeHendler} />
                 <textarea type="text2" name="text3" placeholder='text3' value={state.text3} onChange={chengeHendler} />
-                <img src={`http://localhost:5000/${props.state.image}`} alt="" width='55px' height='55px' />
+                <img src={`http://localhost/${props.state.image}`} alt="" width='55px' height='55px' />
                 <input type="file" name="image" width='55px' height='55px' placeholder="image" onChange={chengeImageHendler} />
                 <button onClick={setTop}>change</button>
             </div>

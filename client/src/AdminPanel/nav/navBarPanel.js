@@ -8,7 +8,7 @@ const NavBarPanel = () => {
     return (
         <nav className={s.container}>
             <div className={s.navbar}>
-                <a href="/Eco-Store/">На Главную</a>
+                <a href="/">На Главную</a>
                 <NavLink to="/Eco-Store/AdminPanel/Top">ТОП</NavLink>
                 <NavLink to="/Eco-Store/AdminPanel/Tables">Список</NavLink>
                 <NavLink to="/Eco-Store/AdminPanel/CreateProduct">Добавить</NavLink>

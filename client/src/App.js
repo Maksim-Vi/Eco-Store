@@ -48,13 +48,13 @@ class App extends React.Component {
         <Route exact path='/Eco-Store/AdminPanel/Registration' render={()=><Registration />}/>
         <Route exact path='/Eco-Store/AdminPanel/Top' render={()=><Top />}/>
       
-        <Route exact path='/Eco-Store/' render={()=><Main />}/>
-        <Route exact path='/Eco-Store/Product' render={ ()=> <StoreContainer />} />
-        <Route exact path='/Eco-Store/AboutUs' component={AboutUs} />
-        <Route exact path='/Eco-Store/Shopping&Payment' component={ShoppingPayment} />
-        <Route exact path='/Eco-Store/ContactUs' component={ContactUs} />
-        <Route exact path='/Eco-Store/Description/:id'  component = {itemDescriptionContainer} />
-        <Route exact path='/Eco-Store/Basket'  component={BasketContainer}/>
+        <Route exact path='/' render={()=><Main />}/>
+        <Route exact path='/Product' render={ ()=> <StoreContainer />} />
+        <Route exact path='/AboutUs' component={AboutUs} />
+        <Route exact path='/Shopping&Payment' component={ShoppingPayment} />
+        <Route exact path='/ContactUs' component={ContactUs} />
+        <Route exact path='/Description/:id'  component = {itemDescriptionContainer} />
+        <Route exact path='/Basket'  component={BasketContainer}/>
       </div>
     )
   }
@@ -73,7 +73,6 @@ export const MainApp = (props) =>{
 
   const {login, logout, token, userID} = useAuch()
   const isAuthorization = !!token
-  
 
   return (
       <AuchContext.Provider value={{token,userID,login,logout,isAuthorization}}>
@@ -89,19 +88,3 @@ export const MainApp = (props) =>{
 }
 
 export default MainApp;
-
-
-/* 
-1) добавить счетчик количества добавленных итемов
-2) уделаение сделать по одному даже если выбрали 3 итема одинаковых  (ПРИДМАТЬ ЛОГИКУ)
-(пока с помощю функции работает сортировки uniqBy. нужно как то добавлять еще плюс счетчик, который будет отображать 
-  номер элемента )
-4) сделать форму запроса 
-5) перенести стейт с редакса в MangoDB
-
------------------------
-доработки
-1) изменить в телефонной версии нав
-3) доделать адаптацию 
-*/
-

@@ -8,7 +8,7 @@ const FormItem = (props) =>{
     return (
     <Card className={s.FBItemsCard}>
         <Card.Body className={s.FBItemsCardBody}>
-            <Image className={s.FBItemsIMG} src={`http://localhost:5000/${props.item.image}`} rounded />
+            <Image className={s.FBItemsIMG} src={`http://localhost/${props.item.image}`} rounded />
             <h5 className={s.FBItemsName}>{props.item.name}</h5>
             <p>{addedCountItem(props.itemsAll,props.item.id)} шт</p>
         </Card.Body>

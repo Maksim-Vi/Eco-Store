@@ -24,11 +24,14 @@ const StoreReducer = (state=initialState,action) => {
 export  const setStore = (store) => ({ type: SET_STORE, store })
 export  const toggleIsFetching = (togglePreloader) => ({ type: TOGGLE_IS_FETCHING, togglePreloader })
 
-export const requastStore = (token) => async (dispatch) => {
+export const requastStore =  (token) => async (dispatch)  => {
     dispatch(toggleIsFetching(true));
-    let data = await getStoreApi(token)
+    const data = await getStoreApi(token)
+    console.log('data store:', data);
     dispatch(toggleIsFetching(false));
     dispatch(setStore(data)); 
+    
+   
 } 
 
 export default StoreReducer;

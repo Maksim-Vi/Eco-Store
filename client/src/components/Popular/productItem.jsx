@@ -28,12 +28,12 @@ const ProdictItem = (props) =>{
                     <div className={s.pictureImg}>
                         {!p.image
                             ?  <img className={s.PI1} src={notFound} alt="" />
-                            :  <img className={s.PI1} src={`http://localhost:5000/${p.image}`} alt="" />
+                            :  <img className={s.PI1} src={`http://localhost/${p.image}`} alt="" />
                          }                    
                         <img className={s.pictureGreen} src={pictureGreen} alt="" />
                         <div>
                             <Link to={
-                                {pathname:'/Eco-Store/Description/' + p.id,
+                                {pathname:'/Description/' + p.id,
                                 state:{
                                     data: Filter(props.items,props.popularProduct).find(function(v){return v.id === p.id})
                                 }}}>

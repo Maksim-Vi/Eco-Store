@@ -4,6 +4,7 @@ const auchMiddleware = require('../Middleware/Middleware');
 const router = require('./auth.routes')
 const {form, formStore} = require('./../routes/nodemailer')
 const multer = require('multer')
+const cors = require('cors')
 // конфигурация папки куда будут сохранятся картинки 
 
 const storage = multer.diskStorage({
@@ -50,15 +51,16 @@ const uploadTop = multer({
 
 module.exports = (app) => {
     // Products
-    app.get('/products',auchMiddleware,  products.getAll);
+    app.get('/products', auchMiddleware,  products.getAll);
     app.get('/products/:id',auchMiddleware, products.getId);
-    app.post( '/products',auchMiddleware, upload.fields([{ name: 'image',  maxCount: 1 },{name: 'image1',  maxCount: 1 },{name: 'image2' ,  maxCount: 1 },{name: 'image3',  maxCount: 1 }]), products.create);
+    app.post( '/products', auchMiddleware, upload.fields([{ name: 'image',  maxCount: 1 },{name: 'image1',  maxCount: 1 },{name: 'image2' ,  maxCount: 1 },{name: 'image3',  maxCount: 1 }]), products.create);
    
     app.put('/products/:id',auchMiddleware,upload.fields([{ name: 'image',  maxCount: 1 },{name: 'image1',  maxCount: 1 },{name: 'image2' ,  maxCount: 1 },{name: 'image3',  maxCount: 1 }]), products.update);
     app.delete( '/products/:id',auchMiddleware,  products.remove);
     
     // auch
     app.use('/Eco-Store/auth', router);
+    app.use('/Eco-Store/AdminPanel/auth', router);
 
     //Send email
     app.post('/MainLink/form',form);

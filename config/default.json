@@ -1,5 +1,5 @@
 {
-    "port": 5000,
+    "port": 80,
     "jwtSecret": "AdminPanel123_NotIs hack",
     "mongoURI": "mongodb+srv://AdminPanel:SexgOWG37BOZpDqN@cluster0-xahvc.azure.mongodb.net/store?retryWrites=true&w=majority",
     "baseUrl":"http://localhost:5000"

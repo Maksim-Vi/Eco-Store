@@ -53,7 +53,7 @@ const Dropdown = ({items=[]}) =>{
                 <li className="dd-list-item" key={item.id}>
                     <NavLink 
                         to={
-                            {pathname:'/Eco-Store/' + item.value,
+                            {pathname:'/' + item.value,
                             state:{
                               data: item.type
                             }}}

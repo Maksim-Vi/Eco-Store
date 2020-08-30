@@ -14,7 +14,7 @@ return (
             <div className={s.container}>
                 <div className={s.description}>
                     <div className={s.logoFooter}>
-                        <NavLink to="/Eco-Store/"><img src={logoFooter} alt=""/></NavLink>    
+                        <NavLink to="/"><img src={logoFooter} alt=""/></NavLink>    
                     </div>
                     <h3 className={s.contactsHeader}>Информация:</h3>
                     <div className={s.contacts}>

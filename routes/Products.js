@@ -6,7 +6,8 @@ const { parse, join } = require('path');
 const getAll = (req,res) => {
     Product.find()
         .exec()
-        .then(products => res.json(products))
+        // .then(products => res.json(products))
+        .then(products => res.send(products))
         .catch(err => res.status(500).json({massage:'some thing happened',err}));
 };
 
@@ -82,19 +83,13 @@ const create = (req,res)=>{
 
 const update = (req,res)=>{
     const body = JSON.parse(req.body.product);
-    console.log('img',body.image);
+    // console.log('img',body.image);
     let image = null;
     let image1 = null;
     let image2 = null;
     let image3 = null;
     if(req.files !== undefined){   
         if(req.files.image !== undefined){
-
-            const file = req.files.image ;
-            const fileItem = file.find(item => item.path)
-            // console.log('image', file.path);      
-            image = fileItem.path
-
             if(body.image !== null){
                 console.log('in if change item',body.image);
                 fs.unlink(String(body.image), (err) => {
@@ -107,6 +102,10 @@ const update = (req,res)=>{
                     }
                 })
             }
+            const file = req.files.image ;
+            const fileItem = file.find(item => item.path)
+            // console.log('image', file.path);      
+            image = fileItem.path
             
         } else{
             image = body.image
@@ -169,7 +168,12 @@ const update = (req,res)=>{
         }  else{
             image3 = body.image3
         }
-    } 
+    } else {
+        image = body.image,
+        image1 = body.image1,
+        image2 = body.image2,
+        image3 = body.image3
+    }
     return Product.findOneAndUpdate({id: req.params.id},{
         id: body.id,
         sale:body.sale,

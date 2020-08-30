@@ -7,7 +7,7 @@ import {totalPriceCount} from '../../Common/common';
 import FormWithMenu from '../../Contacts/contactsForm';
 import AnswerNav from '../../Contacts/answerNav';
 import Dropdown from '../../Common/Dropdown';
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 
 const Nav = (props) =>{
     const [modalShow, setModalShow] = useState(false);
@@ -53,19 +53,19 @@ const Nav = (props) =>{
     return (<>
     <nav className={s.nav}>
         <div className={s.containerLogo}>
-            <NavLink to="/Eco-Store/" className={s.logo}><img src={logo} alt=""/></NavLink>
+            <NavLink to="/" className={s.logo}><img src={logo} alt=""/></NavLink>
         </div>
         <menu className={s.nav_menu}>
-            <NavLink to='/Eco-Store/'></NavLink>
+            <NavLink to='/'></NavLink>
             <Dropdown items={itemsTab}/>
             {/* <li><NavLink to='/Eco-Store/Product' activeClassName={s.navActive}>Продукция</NavLink></li> */}
             <li><span className={s.Contacts}  onClick={handleShow}>Связатся с нами</span></li>
             <FormWithMenu modalShow={modalShow} handleClose={handleClose} />
-            <li><NavLink to='/Eco-Store/AboutUs' activeClassName={s.navActive}>О нас</NavLink></li>
-            <li><NavLink to='/Eco-Store/Shopping&Payment' activeClassName={s.navActive}>Доставка и Оплата</NavLink></li>
-            <li><NavLink to='/Eco-Store/ContactUs' activeClassName={s.navActive}>Контакты</NavLink></li>
+            <li><NavLink to='/AboutUs' activeClassName={s.navActive}>О нас</NavLink></li>
+            <li><NavLink to='/Shopping&Payment' activeClassName={s.navActive}>Доставка и Оплата</NavLink></li>
+            <li><NavLink to='/ContactUs' activeClassName={s.navActive}>Контакты</NavLink></li>
             <li>
-                <NavLink to={'/Eco-Store/Basket'} className={s.btn} activeClassName={s.navActive}>
+                <NavLink to={'/Basket'} className={s.btn} activeClassName={s.navActive}>
                     <div className={s.korzina}>
                         <span>{totalPriceCount(props.totalPrice)} грн </span>
                         <img src={korzina} alt=""/>

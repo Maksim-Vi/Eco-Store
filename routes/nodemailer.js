@@ -17,7 +17,7 @@ const mailer = message => {
         if (err){
             return console.log('Error mailer: ',err)  
         }
-        console.log('Email send info:', info)
+        // console.log('Email send info:', info)
     });
 }
 

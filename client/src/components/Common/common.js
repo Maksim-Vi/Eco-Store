@@ -22,9 +22,13 @@ let sortBy = (items,Filter) =>{
 }
 
 let FilterItems = (items, findItem) =>{
+  if(items === null && items === undefined && items.length === 0){
+    return null
+  } else {
     return items.filter( 
       item =>
         item.name.toLowerCase().indexOf(findItem.toLowerCase()) >=0)
+  }
 }
   
 export const searchItem = (items, findItem, Filter) =>{

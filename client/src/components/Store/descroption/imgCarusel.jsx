@@ -10,10 +10,10 @@ const ImgCarusel = ({data}) =>{
   const [url, setUrl] = useState('');
 
     let urlArray =[
-      `http://localhost:5000/${data.image}`,
-      `http://localhost:5000/${data.image1}`,
-      `http://localhost:5000/${data.image2}`,
-      `http://localhost:5000/${data.image3}`
+      `http://localhost/${data.image}`,
+      `http://localhost/${data.image1}`,
+      `http://localhost/${data.image2}`,
+      `http://localhost/${data.image3}`
     ]
 
     return (

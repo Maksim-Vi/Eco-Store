@@ -50,7 +50,7 @@ const TableProduct = ({product,productsHendler}) =>{
             <li>
             {!product.image
                 ? <img src={notFound} alt="" width='50px' height='50px'/> 
-                :  <img alt="" src={`http://localhost:5000/${product.image}`} width='50px' height='50px'/>
+                :  <img alt="" src={`http://localhost/${product.image}`} width='50px' height='50px'/>
             } 
                 <span>name: {product.name} </span>
                 <span>id: {product.id} </span>
