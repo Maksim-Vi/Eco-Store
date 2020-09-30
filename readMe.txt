@@ -1,6 +1,3 @@
-settings mongodb
-AdminPanel
-SexgOWG37BOZpDqN
 
 плагины для фул стак
 
